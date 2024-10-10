@@ -6,6 +6,7 @@ import os
 import yaml
 
 PROMETHEUS_URL = ""
+TARGET_CLUSTER_CONTEXT = ""
 
 def query_prometheus(query):
     url = f"{PROMETHEUS_URL}/api/v1/query"
@@ -77,7 +78,7 @@ def check_pod():
 if __name__ == "__main__":
     
     while True:
-        get_failed_pods("")
+        get_failed_pods(TARGET_CLUSTER_CONTEXT)
         print()
         check_pod()
         time.sleep(60)
