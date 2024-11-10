@@ -4,6 +4,9 @@ prometheus APIを使用してPodがRunningになっていないもののYamlフ�
 
 
 プログラム内のprometheus urlにapiのURLを入力
+
 プログラム内のtarget_cluster_contextに対象のクラスタを使用するように設定したkubectlのコンテキスト名を入力
+
 python3 swipe.pyで実行できます．
+
 yaml_dataフォルダを作成しておく必要があるかもしれません．
